@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nako-benchmark"
+version = "1.0.0"
+description = "Parameterized benchmarks for neutral-atom quantum compilers"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "qiskit>=1.2,<3"]
+
+[project.scripts]
+nako = "nako.__main__:main"
+
+[tool.setuptools]
+packages = ["nako"]
